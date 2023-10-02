@@ -35,7 +35,7 @@ function SizeFilter({ data, setdata }) {
       {/* <div style={{ "text-align": "center" }}>
       </div> */}
       <Titlecontainer>
-        <p style={{ "font-size": "1.5rem" }}>Sizes</p>
+        <p>Sizes</p>
       </Titlecontainer>
       <SizeStyle>
         <SizeBtn onClick={() => handleFilter("S")}>S</SizeBtn>

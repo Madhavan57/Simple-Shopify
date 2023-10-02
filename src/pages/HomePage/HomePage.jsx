@@ -22,9 +22,6 @@ function HandleButtonClick(datas) {
   storeClickedData.push(datas);
   localStorage.setItem("DatasId", JSON.stringify(storeClickedData));
 }
-function homecartitems() {
-  return countItems;
-}
 
 export function TotalItems() {
   return storeClickedData.length;
@@ -39,7 +36,9 @@ export function FetchDatas({ data }) {
     return (
       <ClothsContainer className="ClothsContainer" key={index}>
         <StyleImage src={datas.image_url} alt="picture is un-available" />
-        <p>{datas.name}</p>
+        <p style={{ overflowWrap: "break-word", textAlign: "center" }}>
+          {datas.name}
+        </p>
         <p>Rs : $ {datas.price}</p>
         <b style={{ color: "red" }}>{datas.size}</b>
         <div className="addToCartBtn">
@@ -79,7 +78,7 @@ function HomePage() {
   return (
     <div>
       <div className="cart-home" onClick={() => navigate("/view-cart")}>
-        <span className="count-home">1</span>
+        <span className="count-home">{countItems}</span>
         <FontAwesomeIcon
           icon={faCartShopping}
           className="material-icons-home"

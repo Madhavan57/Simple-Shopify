@@ -12,16 +12,24 @@ function CartPage() {
     setCartItems(JSON.parse(getCartData()));
   }, []);
 
+  const mystyle = {
+    height: "650px",
+    "background-color": "green",
+    "overflow-x": "hidden",
+  };
+
   return (
     <CartContainer>
       <HeaderCartPg />
-      {cartItems.map((cart, index) => {
-        return (
-          <React.Fragment key={index}>
-            <CartComponent data={cart} />
-          </React.Fragment>
-        );
-      })}
+      <section style={mystyle}>
+        {cartItems.map((cart, index) => {
+          return (
+            <React.Fragment key={index}>
+              <CartComponent data={cart} />
+            </React.Fragment>
+          );
+        })}
+      </section>
       <FooterShowTotalPrice />
     </CartContainer>
   );

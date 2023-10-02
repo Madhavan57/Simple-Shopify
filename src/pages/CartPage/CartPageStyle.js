@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const ViewCartContainer = styled.div`
   width: 100%;
   display: flex;
-  overflow-x: scroll;
+  // overflow-x: scroll;
 `;
 
 export const BoxContainer = styled.div`
