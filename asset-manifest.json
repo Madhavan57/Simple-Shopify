@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/Simple-Shopify/static/css/main.f6c5618d.css",
+    "main.js": "/Simple-Shopify/static/js/main.53a1eef3.js",
+    "static/media/MensStayGroovyWhiteTShirt.jpg": "/Simple-Shopify/static/media/MensStayGroovyWhiteTShirt.a688371118dc178c7223.jpg",
+    "index.html": "/Simple-Shopify/index.html",
+    "main.f6c5618d.css.map": "/Simple-Shopify/static/css/main.f6c5618d.css.map",
+    "main.53a1eef3.js.map": "/Simple-Shopify/static/js/main.53a1eef3.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f6c5618d.css",
+    "static/js/main.53a1eef3.js"
+  ]
+}
